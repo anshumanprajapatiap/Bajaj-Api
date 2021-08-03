@@ -82,7 +82,7 @@ def send_json_empty(request):
                    'numbers': li
                     },
                 "Response":{
-                    'is_success': status,
+                    'is_success': False,
                     'user_id': userid,
                     'odd': odd, 
                     'even': even
