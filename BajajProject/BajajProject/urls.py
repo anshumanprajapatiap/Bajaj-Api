@@ -21,6 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     #path('api/', UserList.as_view()),
     #path('api/de/<int:pk>', UserDetail.as_view()),
-    path('bfhl/', send_json_empty, name='send_json_empty'),
-    path('bfhl/<slug:num>', send_json, name='send_json'),
+    path('anshumanbajaj/', send_json_empty, name='send_json_empty'),
+    path('anshumanbajaj/<slug:num>', send_json, name='send_json'),
 ]
