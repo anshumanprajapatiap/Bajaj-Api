@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from BajajApi.views import UserList, UserDetail, send_json, send_json_empty
+from BajajApi.views import send_json, send_json_empty
 from django.conf.urls.static import static
 from django.conf import settings
 
@@ -26,4 +26,5 @@ urlpatterns = [
     #path('api/de/<int:pk>', UserDetail.as_view()),
     path('anshumanbajaj/', send_json_empty, name='send_json_empty'),
     path('anshumanbajaj/<slug:num>', send_json, name='send_json'),
+    
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

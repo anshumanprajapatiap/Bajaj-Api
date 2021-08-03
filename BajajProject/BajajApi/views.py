@@ -1,18 +1,10 @@
 from django.shortcuts import render
-from rest_framework import generics, views
-from BajajApi.models import Details
-from BajajApi.serializers import UserSerializer
+
+
 
 from django.http import JsonResponse
 
 # Create your views here.
-class UserList(generics.ListAPIView):
-    queryset = Details.objects.all()
-    serializer_class = UserSerializer
-
-class UserDetail(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Details
-    serializer_class = UserSerializer
 
 
 def isnum(s):
