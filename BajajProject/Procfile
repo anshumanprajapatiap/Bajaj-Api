@@ -1,0 +1,2 @@
+
+web: gunicorn BajajProject.wsgi --log-file -
